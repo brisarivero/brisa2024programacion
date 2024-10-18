@@ -1,0 +1,77 @@
+/*fuente de google*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
+
+/*.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  */
+header {
+    font-family:'Bebas Neue', sans-serif;
+    background-color: black; /*El fondo del encabezado negro*/
+    color: white;
+    padding: 30px 0; /* espaciado interno de 30 pixeles en la parte de arriba y abajo del encabezado*/
+    text-align: center; /*centra el texto*/
+    font-size: larger ;/* define el tamaño de la fuente como "larger" que es más grande que el tamaño base*/
+}
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #083388;
+    margin: 0; /*elimina los margeenes*/
+    padding: 0;
+
+ }
+header { 
+    background-color: #030303; 
+    color: rgb(28, 78, 13); 
+    text-align: center;
+    padding: 1rem;  /*define el  relleno interno de 1 rem */
+    }
+.container {
+     max-width: 1200px; /*ancho maximo del contenedor*/
+     margin: auto; /*centra el contenido horizonatalmente*/
+     padding: 20px; /*relleno interno*/
+     }
+.container h2{
+    text-align: center;
+}
+.container p{
+    color: white;
+    text-align: center;
+}
+.gallery {  
+    display: flex; /*elemntos flexbox para q las cajas sean fleixibles y organizarlos dentro de la galeria*/
+    flex-wrap: wrap;
+     gap: 20px; /*espacio de 20 pixeles entre los elementos de la galeria*/
+    }
+.gallery img {
+     width: 100%;
+    height: auto; 
+    border-radius: 5px; /*borde redondo*/
+    box-shadow: 0 4px 8px rgba(225, 204, 204, 0.1);/*sombra suave a los elementos*/
+ }
+.gallery-item { 
+    width: calc(33% - 20px);  /* Cada elemento ocupa el 33% del ancho del contenedor, menos 20 pixeles para el espacio entre ellos */
+}
+.gallery-item h3 { 
+    margin: 10px 0; 
+    font-size: 18px;  /*Define un tamaño de fuente de 18 pixeles*/
+    color: #d6c2c2;
+ }
+.button { 
+    display: inline-block;  /*Hace que el boton se comporte como un bloque en linea, ocupando solo el espacio necesario*/
+    padding: 10px 20px; 
+    background-color: #28a745; 
+    color: white;
+    border: none;  /*saca los bordes del boton*/
+    border-radius: 5px; /*agrega bordes redondos al boton*/
+    text-align: center; /*centra el texto del boton*/
+    text-decoration: none;
+ }
+ .iframe{
+    justify-content: flex-end;/*Alinea el iframe al final de su contenedor */
+    height: 10px;
+    width: 10px;
+ }

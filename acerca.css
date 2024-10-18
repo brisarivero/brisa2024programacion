@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*tipografia de google fonts*/
+body{
+    
+    background:#083388; /*color de fondo*/
+}
+header {
+    font-family:'Bebas Neue', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 28px 0; /*espacio alrededor,espacio entre el contenido y borde*/
+    text-align: center;
+}
+
+.container {/*contenedorpadre*/
+    max-width: 1200px;  /*ancho para pantallas grandes*/
+    margin: auto; 
+    padding: 20px;
+
+    }
+.container h2{ /*estilo para titulos*/
+   text-align: center;
+   
+}
+.container p{ /*texto */
+   color: white;
+   text-align: center;
+}
+.nosotros { 
+   display: flex; /*elementos en una fila*/
+   flex-wrap: wrap; /*sirve para que se pongan uno abajo del otro cuando no haya espacio en la pantalla*/   
+    gap: 20px; /*tamaño y distancia entrencolumnas*/
+}
+
+
+.nosotros-item {  /*estilos para los elemntos indivuduales*/
+   width: calc(33% - 20px); 
+   background-color: rgba(0, 0, 0, 0.519);
+   box-shadow: 10px 10px 5px  gray; /*sombras*/
+   border-radius: 5px;
+   font-family: 'Lato-BlackItalic' ;
+}
+.nosotros-item h3 {  /*estilos para los titulos de cada "caja"*/
+   margin: 10px 0; 
+   font-size: 18px; 
+   color: #d6c2c2;
+   text-align: center; 
+}
+
+@media (max-width: 768px) {
+   .nosotros-item {
+       width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
+   }
+} 
+@media (max-width: 480px) {
+   .nosotros {
+       flex-direction: column; /* Cambia a una sola columna */
+       gap: 10px; /* Reduce el espacio entre los elementos */
+   }
+   .nosotros-item {
+      width: 100%; /* El elemento ocupa el 100% del ancho en celulares */
+      box-shadow: 5px 5px 3px gray; /* Reduce la sombra en celulares */
+      padding: 10px; /* Reduce el padding en celulares */
+  }
+  .nosotros-item h3 {
+   font-size: 16px; /* Ajuste del tamaño del texto encelulares */
+}
+.container p {
+   font-size: 14px; /* Ajusta el tamaño del texto para leer mejpr en los celulares  */
+}
+}

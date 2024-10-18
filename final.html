@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de plomeria y gas">
+    <meta name="keywords" content="plomeria,reparaciones, instalacion de tuberias entreo otras">
+    <title>PAGINA FINAL</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script><!--java-->
+		alert('Bienvenidos a GargasServicio'); 
+	</script>
+</head>
+<body>
+    <header id="principio"> <!--cabecera donde se mostrara el logo y la info de contacto-->
+        <h1><img src="logo.PNG" alt=""></h1> <!--titulo e imagen de logo-->
+        <p>Servicios Profesionales de Gas y Plomería</p>  <!--describe parte de la empresa-->
+        <p>CELULAR:+54 1170165971</p>
+    </header>
+    <nav><!--LINKS A OTRA PAGINA EXTERNA-->
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+        <a class="btn" href="acerca.html" >Acerca de</a>
+        <a class="btn" href="trabajos.html">Trabajos</a>
+        <a class="btn" href="seguinos.html">Seguinos</a>
+    </nav>
+    <div class="container"> <!--para agrupar el contenido principal-->
+        <article><!--lo use para agrupar el contenido de los servicios y contacto-->
+        <section id="services" class="services">
+            <h2>Nuestros Servicios</h2><!--segundo encabezado-->
+            <ul><!--lista no ordenada para agrupar los elementos -->
+                <li>Instalación de sistemas de gas</li> <!--servicios ofrecidos-->
+                <li>Mantenimiento de tuberías y plomería</li><!--servicios ofrecidos-->
+                <li>Reparación de fugas de gas</li><!--servicios ofrecidos-->
+                <li>Instalación de calentadores de agua</li><!--servicios ofrecidos-->
+          
+            </ul>
+        </section>
+        <div class="slides"> <!--IMAGENES CARROUSEL GALERIA DE IMAGENS -->
+            <div class="slide slide-1">
+                <img src="gasslider.webp" alt="Imagen 1">
+            </div>
+             <div class="slide slide-2">
+                   <img src="plomeriaslider.jpeg" alt="Imagen 2">
+             </div>
+        </div>
+        <aside><!--COMENTARIOS,NUMERO Y GMAIL-->
+            <div class="contacto"> <!--CONTENEDOR PARA CONTACTO RAAPIDO -->
+                <h3>Contacto Rapido</h3>
+                <p>Telefono: <a href="tel:+54 1170165971">+54 1170165971</a></p><!--numero de telefono-->
+                <p>Correo: <a href="gargasservicio@gmail.com"> gargasservicio@gmail.com</a></p>
+                <p>Atencion 24/7</p>
+            </div>
+
+            <div class="testimonios"><!--contendor para mostrar algunos testimonios usando blockquote -->
+                <h3>Testimonios</h3>
+                <blockquote>"Excelente servicio,rapido y profesional.¡Recomendado!- Maria Garcia </blockquote><!--el blockquote sirve para crear citas como  los testimonios-->
+                <blockquote>"Muy confiables"- Juan Fernandez </blockquote><!--testimonios --> 
+            </div>
+            <div class="ofertas"><!--contenedor para mostrar las ofertas-->
+                <h3>Ofertas especiales</h3>
+                <p>Consulta gratuita en linea</p><!--parrafo-->
+                <p>¡10% de descuento en tu primera Reparación!</p><!--parrafo-->
+            </div>
+            <div class="Redes-sociales"><!--contenedor para mostrar los enlaces a las redes sociales-->
+                <h3>¡Seguinos!</h3>
+                <a href="#">Instagram</a>
+            </div>
+        </aside>    
+        </article>
+    </div>
+   
+    <footer id="contacto"><!--pie de pagina con el id="contacto" para crear formulario para q envien mensaje -->
+		<section class="contacto">
+			<div class="contenedor">
+				<h3 class="titulo">Contacto</h3>
+				<form class="formulario" action=""> <!--formulario de contacto donde el usuario puede introducir su nombre,gmail y algun mensaje-->
+					<input type="text" placeholder="Nombre" name="nombre" required>
+					<input type="email" placeholder="Correo" name="correo" required>
+					<textarea name="mensaje" placeholder="Mensaje:"></textarea><!--sirve para crear un cuadrado de texto -->
+					<input class="boton" type="submit" value="Enviar"> <!--boton-->
+				</form>
+			</div>
+		</section>
+
+	<section class="redes-sociales"><!--contiene diferentes enlaces para las redes sociales -->
+			<div class="contenedor"><!--contenedor de links de redes-->
+				<a class="twitter" href="http://www.twitter.com/" target="_blank"><em class="fa-brands fa-square-x-twitter"></em></a>
+				<a class="facebook" href="http://www.facebook.com/" target="_blank"><em class="fab fa-facebook"></em></a>
+				<a class="youtube" href="http://www.youtube.com/" target="_blank"><em class="fa-brands fa-youtube"></em></a>
+				<a class="github" href="http://www.github.com/" target="_blank"><em class="fab fa-github"></em></a>
+				<a class="instagram" href="http://www.instagram.com/" target="_blank"><em class="fab fa-instagram"></em></a>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>

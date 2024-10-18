@@ -1,0 +1,106 @@
+body{
+   
+    background:#083388;
+}
+header {
+    font-family:'Bebas Neue', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;    
+}
+
+
+.btn-instagram {
+    
+    display: inline-block;
+    background-color: #b44eb8; /* Color de fondo similar a Instagram */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Alineación del texto */
+}
+
+.btn-instagram:hover {
+    background-color: #C13584; /* Color de fondo al pasar el mouse */
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+
+footer .redes-sociales {
+    background: #1e2b38;
+    padding: 30px 0;
+}
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 90px;
+}
+/*.contenedor{
+    margin: 100px;
+}*/
+
+footer .redes-sociales .twitter:hover {	background: #14171a; }
+footer .redes-sociales .facebook:hover { background: #3b5998; }
+footer .redes-sociales .youtube:hover {	background: #cd201f; }
+footer .redes-sociales .github:hover { background: #666666; }
+footer .redes-sociales .instagram:hover { background: #3f729b; }
+
+
+/*===============*/
+/*MEDIA QUERIES  */
+/*===============*/
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .btn-instagram {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer .redes-sociales a {
+        width: 60px;
+        font-size: 24px;
+        margin: 0 30px;
+    }
+
+    .inicio h2 {
+        font-size: 18px;
+    }
+}
+
+/* Para pantallas medianas  */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    .btn-instagram {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    footer .redes-sociales a {
+        width: 80px;
+        font-size: 28px;
+        margin: 0 50px;
+    }
+}
